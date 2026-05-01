@@ -1,0 +1,15 @@
+{
+	"name": "adf-sedona",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "66eb813c-4975-4983-9384-391c899ae21d",
+		"tenantId": "48b4ac64-a673-4283-9195-4b1defc6f717"
+	}
+}
