@@ -16,14 +16,24 @@
 			"transformations": [
 				{
 					"name": "selectCols"
+				},
+				{
+					"name": "filter1"
 				}
 			],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
+				"source(output(",
+				"          product_id as string,",
+				"          product_name as string,",
+				"          category as string,",
+				"          price as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 select(skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> selectCols"
+				"     skipDuplicateMapOutputs: true) ~> selectCols",
+				"selectCols filter(category != Smartphone) ~> filter1"
 			]
 		}
 	}
