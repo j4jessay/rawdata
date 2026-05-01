@@ -16,6 +16,9 @@
 			"transformations": [
 				{
 					"name": "selectCols"
+				},
+				{
+					"name": "filter1"
 				}
 			],
 			"scriptLines": [
@@ -35,7 +38,8 @@
 				"          price",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> selectCols"
+				"     skipDuplicateMapOutputs: true) ~> selectCols",
+				"selectCols filter(category != 'Smartphone') ~> filter1"
 			]
 		}
 	}
