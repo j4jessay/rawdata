@@ -19,6 +19,9 @@
 				},
 				{
 					"name": "filter1"
+				},
+				{
+					"name": "split1"
 				}
 			],
 			"scriptLines": [
@@ -33,7 +36,11 @@
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 select(skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> selectCols",
-				"selectCols filter(category != Smartphone) ~> filter1"
+				"selectCols filter(category != 'Smartphone') ~> filter1",
+				"filter1 split(caregory== 'Accessory',",
+				"     category=='Laptop',",
+				"     category=='Tablet',",
+				"     disjoint: false) ~> split1@(Accssory, Laptop, , Tablet)"
 			]
 		}
 	}
