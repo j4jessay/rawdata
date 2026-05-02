@@ -12,7 +12,7 @@
 			"value": ""
 		},
 		"LinkedService_Git_Practice_properties_typeProperties_url": {
-			"value": "https://github.com/"
+			"value": "https://raw.githubusercontent.com/"
 		},
 		"linkedserviceDL_properties_typeProperties_url": {
 			"value": "https://adfpracticesedona.dfs.core.windows.net/"

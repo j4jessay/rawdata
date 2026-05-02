@@ -17,7 +17,7 @@
 		},
 		"LinkedService_Git_Practice_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://github.com/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"linkedserviceDL_properties_typeProperties_url": {
 			"type": "string",
@@ -165,7 +165,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "j4jessay/rawdata/blob/main/spark_databricks@{dataset().p_file_name}",
+							"value": "j4jessay/rawdata/refs/heads/main/spark_databricks@{dataset().p_file_name}",
 							"type": "Expression"
 						}
 					},
@@ -721,7 +721,7 @@
 											"parameters": {
 												"p_folder": "github",
 												"p_file": {
-													"value": "@{item().name}.csv",
+													"value": "@{item().name}",
 													"type": "Expression"
 												}
 											}
