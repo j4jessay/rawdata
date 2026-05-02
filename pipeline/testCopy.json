@@ -76,7 +76,7 @@
 									"parameters": {
 										"p_folder": "github",
 										"p_file": {
-											"value": "@{item().name}.csv",
+											"value": "@{item().name}",
 											"type": "Expression"
 										}
 									}
