@@ -37,10 +37,10 @@
 				"source1 select(skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> selectCols",
 				"selectCols filter(category != 'Smartphone') ~> filter1",
-				"filter1 split(caregory== 'Accessory',",
+				"filter1 split(category== 'Accessory',",
 				"     category=='Laptop',",
 				"     category=='Tablet',",
-				"     disjoint: false) ~> split1@(Accssory, Laptop, , Tablet)"
+				"     disjoint: false) ~> split1@(Accssory, Laptop, Tablet)"
 			]
 		}
 	}
