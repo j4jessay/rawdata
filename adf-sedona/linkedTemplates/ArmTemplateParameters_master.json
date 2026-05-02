@@ -8,11 +8,20 @@
 		"linkedserviceDL_accountKey": {
 			"value": ""
 		},
+		"ls_dl_api_accountKey": {
+			"value": ""
+		},
+		"LinkedService_Git_Practice_properties_typeProperties_url": {
+			"value": "https://github.com/"
+		},
 		"linkedserviceDL_properties_typeProperties_url": {
 			"value": "https://adfpracticesedona.dfs.core.windows.net/"
 		},
 		"linkedservicegit_properties_typeProperties_url": {
 			"value": "https://github.com"
+		},
+		"ls_dl_api_properties_typeProperties_url": {
+			"value": "https://adfpracticesedona.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
