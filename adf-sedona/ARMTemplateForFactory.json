@@ -565,7 +565,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "j4jessay/rawdata/refs/heads/main/spark_databricks@{dataset().p_file_name}",
+							"value": "j4jessay/rawdata/refs/heads/main/spark_databricks/@{dataset().p_file_name}",
 							"type": "Expression"
 						}
 					},
